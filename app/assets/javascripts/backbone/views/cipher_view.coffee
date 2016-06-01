@@ -3,8 +3,8 @@ class WebAseanTestWork.Views.CipherView extends Backbone.View
   el: '#application'
 
   events:
-    'blur input' : 'process_message'
-    'blur textarea' : 'process_message'
+    'change input' : 'process_message'
+    'change textarea' : 'process_message'
 
   initialize: (@user) ->
 
@@ -20,8 +20,8 @@ class WebAseanTestWork.Views.CipherView extends Backbone.View
     }, success: @update_view)
 
   update_view: (model) =>
-    @user = model
-    @render()
+    console.log(model.get('message').encoded_content)
+    $('#message_encoded_content').html(model.get('message').encoded_content)
 
   render: ->
     $(@el).html(@template(@user.toJSON()))

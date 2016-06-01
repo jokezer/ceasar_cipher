@@ -10,5 +10,5 @@
     <textarea id="message_content" class="form-control"><%= @message.content %></textarea>
   </div>
 
-  <pre><%= @message.encoded_content %></pre>
+  <pre id='message_encoded_content'><%= @message.encoded_content %></pre>
 </form>
