@@ -1,0 +1,10 @@
+<h1>Insert your name</h1>
+
+<form name='user'>
+  <div class="form-group">
+    <label for="name">User name</label>
+    <input type="text" class="form-control" placeholder="User name" name="name">
+  </div>
+
+  <input type='submit' value='Create user' class="btn btn-default">
+</form>
