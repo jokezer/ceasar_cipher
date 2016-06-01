@@ -6,4 +6,10 @@ class Message < ActiveRecord::Base
   def shift
     super || 1
   end
+
+  def encoded_content
+    return unless content
+    
+    CeasarCipher.new(content, shift).encode
+  end
 end

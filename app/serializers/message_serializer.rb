@@ -1,3 +1,3 @@
 class MessageSerializer < ActiveModel::Serializer
-  attributes :id, :content, :shift
+  attributes :id, :shift, :content, :encoded_content
 end

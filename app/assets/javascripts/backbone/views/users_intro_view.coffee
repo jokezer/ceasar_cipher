@@ -23,4 +23,4 @@ class WebAseanTestWork.Views.UsersIntroView extends Backbone.View
       alert('Insert user name')
 
   redirect_to_user_page: (user) ->
-    Backbone.history.navigate("/cipher/#{user.get('url_alias')}")
+    Backbone.history.navigate("/cipher/#{user.get('url_alias')}", trigger: true)
