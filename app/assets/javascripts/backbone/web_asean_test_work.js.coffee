@@ -11,7 +11,8 @@ window.WebAseanTestWork =
   Views: {}
 
   init: ->
-    new WebAseanTestWork.Routers.UsersRouter()
+    new WebAseanTestWork.Routers.BaseRouter()
+
     Backbone.history.start({pushState: true, root: '/'});
 
 $ ->

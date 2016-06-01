@@ -1,6 +1,9 @@
 class WebAseanTestWork.Models.User extends Backbone.Model
   paramRoot: 'user'
-  url: '/api/users'
+  url: ->
+      url = '/api/users/'
+      url = "#{url}#{@get('url_alias')}" if @get('url_alias')
+      url
 
   defaults: {}
 
