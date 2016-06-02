@@ -1,28 +1,42 @@
 == README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Ceaser Cipher test task.
 
-Things you may want to cover:
+=== Task description
 
-* Ruby version
+> Make an example app of 2 pages.
+>
+> First page - user enters his name, clicks the button and the app
+> generates special unique link to him. (for example /cipher/abcdef).
+> By visiting this link user gets to the second page, where he can encode a
+> message using https://en.wikipedia.org/wiki/Caesar_cipher
+> Basically, it is a header "Greeting, [username]", textarea, input for shift
+> integer and output block.
+> After user make a change to textarea it fires a delay timer of 0.5s and if
+> user makes no more changes to the textarea - it sends a request to
+> server which encodes the messages and displays it inside the output block.
+> Message should be persisted in the database, so when user visits his page
+> for the second time will be able to continue from the last saved state.
+>
+> You get more points if you'll cover your application with automated tests.
+>
+> You get more points if it is a single page application.
+>
+> The description of the task might miss requirements - you are free to decide
+> the rest on your own.
 
-* System dependencies
+=== Technologies stack:
 
-* Configuration
+* Ruby 2.3.1
 
-* Database creation
+* Ruby on Rails 4.2
 
-* Database initialization
+* Postgresql
 
-* How to run the test suite
+* RSpec
 
-* Services (job queues, cache servers, search engines, etc.)
+* CoffeeScript
 
-* Deployment instructions
+* ECO Templates
 
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+* SCSS
